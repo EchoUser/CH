@@ -52,3 +52,21 @@ h5 {
   text-decoration: none;
   margin: 0;
 }
+
+.list-group-header {
+  padding: 10px 15px;
+}
+
+.center {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.small {
+  font-size: 9px;
+  margin: 30px 0px;
+}
+
+.small-search {
+  height: 28px;
+}
