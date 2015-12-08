@@ -23,6 +23,9 @@ h5 {
   font-size: 12px;
 }
 
+.list-group {
+  font-size: 11px;
+}
 .table a{
   text-decoration: none;
   color: #333;
