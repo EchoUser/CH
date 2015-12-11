@@ -73,3 +73,53 @@ h5 {
 .small-search {
   height: 28px;
 }
+
+.search-label {
+  position: absolute;
+  top: 6px;
+  left: 10px;
+  z-index: 20;
+  height: 22px;
+  font-size: 100%;
+}
+
+.search-label2 {
+  position: absolute;
+  top: 6px;
+  left: 95px;
+  z-index: 20;
+  height: 22px;
+  font-size: 100%;
+}
+
+.input-group, .breadcrumb {
+  margin-top: 20px;
+}
+
+.related-links {
+  margin: 0px 5px;
+}
+
+.close {
+  font-size: 18px;
+  line-height: .8;
+  float: none;
+}
+
+.alert {
+  font-size: 12px;
+  height: 26px;
+  padding: 0px 5px;
+}
+
+.offset{
+  padding-left: 96px;
+}
+
+.extra-padding {
+  padding: 30px;
+}
+
+.extra-padding .panel-default {
+  border: 0;
+}
