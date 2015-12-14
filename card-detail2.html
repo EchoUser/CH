@@ -35,12 +35,24 @@
             <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
           </span>
         </div><!-- /input-group -->
+      </div><!-- /.col-lg-6 -->
+    </div>
+    <div class="row">
+      <div class="col-sm-1">
+        <div class="dropdown">
+          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            Edit filters
+            <span class="caret"></span>
+          </button>
+        </div>
+      </div>
+      <div class="col-sm-6">
         <span class="small">Related searches:
           <a href="card-detail2.html" class="related-links">FitFood AND "weeknight dinner"</a>
           <a href="card-detail2.html" class="related-links">FitFood AND "all natural"</a>
-          <a href="card-detail2.html" class="related-links">FitFood AND diet</a>
+          <a href="card-detail2.html" class="related-links">Lean Cuisine</a>
         </span>
-      </div><!-- /.col-lg-6 -->
+      </div>
     </div>
     <div class="row">
       <div class="col-sm-6 col-sm-offset-3">
@@ -51,7 +63,7 @@
       </div>
     </div>
     <ol class="breadcrumb">
-      <li><a href="insights2.html">All insights for "Weeknight dinner"</a></li>
+      <li><a href="insights2.html">All insights for "FitFood" and "Weeknight dinner"</a></li>
       <li>Topics</li>
     </ol>
     <div class="bootcards-list">
@@ -60,21 +72,13 @@
           <h4 class="center">The topics most relevant to this conversation are <strong>weeknight dinner, FitFood diet,</strong> and <strong>what to cook</strong></h4>
           <p class="small">Topics are a classification of common themes and words mentioned in conversation.</p>
           <h5>all topics (20)</h5>
-          <form>
-            <div class="row">
-              <div class="col-xs-3">
-                <div class="form-group">
-                  <input type="text" class="form-control small-search" placeholder="Search">
-                  <i class="fa fa-search"></i>
-                </div>
-              </div>
-              <div class="col-xs-3">
-                <a class="btn-sm btn-primary btn-block" href="#">
-                  Add another column property
-                </a>
-              </div>
+          <div class="row">
+            <div class="col-xs-3">
+              <a class="btn-sm btn-primary btn-block" href="#">
+                Add another column property
+              </a>
             </div>
-          </form>
+          </div>
         </div>
 
         <div class="list-group">
@@ -84,20 +88,20 @@
                 <h5>topic</h5>
               </div>
               <div class="col-sm-4">
-                <h5>relevance score (volume x affinity)</h5>
+                <h5 data-toggle="tooltip" title="How relevant this topic is among this audience relative to the general population, in the context of this conversation"><a href="card-detail.html">relevance score (volume x affinity) <span class="caret caret-reversed"></span></a></h5>
               </div>
               <div class="col-sm-4">
-                <h5>volume</h5>
+                <h5 data-toggle="tooltip" title="How many audience posts are related to this topic"><a href="card-detail3.html">volume</a></h5>
               </div>
               <div class="col-sm-2">
-                <h5>affinity</h5>
+                <h5 data-toggle="tooltip" title="How popular this topic is among this audience relative to the general population"><a href="#">affinity</a></h5>
               </div>
             </div>
           </div>
-          <a class="list-group-item" href="topic-detail.html">
+          <div class="list-group-item">
             <div class="row">
               <div class="col-sm-2">
-                <p class="list-group-item-text"><strong>Weeknight dinner</strong></p>
+                <p class="list-group-item-text" data-toggle="modal" data-target=".topicModal"><strong>Weeknight dinner</strong></p>
               </div>
               <div class="col-sm-3">
                 <div class="progress">
@@ -121,12 +125,12 @@
                 7x
               </div>
             </div>
-          </a>
+          </div>
 
-          <a class="list-group-item" href="topic-detail.html">
+          <div class="list-group-item">
             <div class="row">
               <div class="col-sm-2">
-                <p class="list-group-item-text"><strong>FitFood diet</strong></p>
+                <p class="list-group-item-text" data-toggle="modal" data-target=".topicModal"><strong>FitFood diet</strong></p>
               </div>
               <div class="col-sm-3">
                 <div class="progress">
@@ -150,15 +154,15 @@
                 3.3x
               </div>
             </div>
-          </a>
-          <a class="list-group-item" href="topic-detail.html">
+          </div>
+          <div class="list-group-item">
             <div class="row">
               <div class="col-sm-2">
-                <p class="list-group-item-text"><strong>What to cook</strong></p>
+                <p class="list-group-item-text" data-toggle="modal" data-target=".topicModal"><strong>What to cook</strong></p>
               </div>
               <div class="col-sm-3">
                 <div class="progress">
-                  <div class="progress-bar" style="width: 6.0%;">
+                  <div class="progress-bar" style="width: 60%;">
                   </div>
                 </div>
               </div>
@@ -178,12 +182,12 @@
                 3.4x
               </div>
             </div>
-          </a>
+          </div>
 
-          <a class="list-group-item" href="topic-detail.html">
+          <div class="list-group-item">
             <div class="row">
               <div class="col-sm-2">
-                <p class="list-group-item-text">Better than takeout</p>
+                <p class="list-group-item-text" data-toggle="modal" data-target=".topicModal">Better than takeout</p>
               </div>
               <div class="col-sm-3">
                 <div class="progress">
@@ -207,13 +211,13 @@
                 7x
               </div>
             </div>
-          </a>
+          </div>
 
 
-          <a class="list-group-item" href="topic-detail.html">
+          <div class="list-group-item">
             <div class="row">
               <div class="col-sm-2">
-                <p class="list-group-item-text">Home cooked</p>
+                <p class="list-group-item-text" data-toggle="modal" data-target=".topicModal">Home cooked</p>
               </div>
               <div class="col-sm-3">
                 <div class="progress">
@@ -237,12 +241,12 @@
                 1.9x
               </div>
             </div>
-          </a>
+          </div>
 
-          <a class="list-group-item" href="topic-detail.html">
+          <div class="list-group-item">
             <div class="row">
               <div class="col-sm-2">
-                <p class="list-group-item-text">Butternut squash</p>
+                <p class="list-group-item-text" data-toggle="modal" data-target=".topicModal">Butternut squash</p>
               </div>
               <div class="col-sm-3">
                 <div class="progress">
@@ -266,14 +270,302 @@
                 1.9x
               </div>
             </div>
-          </a>
+          </div>
 
         </div>
 
 
       </div>
     </div>
+    <div id="topicModal" class="modal fade topicModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="extra-padding">
+              <div class="bootcards-list">
+                <div class="panel panel-default">
+                  <div class="panel-body">
+                    <h4 class="center">Topic: "All natural"</h4>
+                    <p class="small">
+                      Topics are a classification of common themes and words mentioned in conversation.
+                    </p>
 
+                    <img src="img/topic-detail.png" width="100%">
+                    <h5>all posts (206)</h5>
+                    <form>
+                      <div class="row">
+                        <div class="col-xs-3">
+                          <div class="form-group">
+                            <input type="text" class="form-control small-search" placeholder="Search for word or author">
+                            <i class="fa fa-search"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+
+                  <div class="list-group">
+                    <div class="list-group-header">
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <h5>post</h5>
+                        </div>
+                        <div class="col-sm-2">
+                          <h5>date</h5>
+                        </div>
+                        <div class="col-sm-1">
+                          <h5>channel</h5>
+                        </div>
+                        <div class="col-sm-2">
+                          <h5>author</h5>
+                        </div>
+                        <div class="col-sm-1">
+                          <h5>shares</h5>
+                        </div>
+                        <div class="col-sm-1">
+                          <h5>likes</h5>
+                        </div>
+                        <div class="col-sm-1">
+                          <h5>sentiment</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="list-group-item" target="_blank" href="https://twitter.com/rachaelray/status/675442886117322753">
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        </div>
+                        <div class="col-sm-2">
+                          <p class="list-group-item-text">8:55pm on 10/31/15</p>
+                        </div>
+                        <div class="col-sm-1">
+                          <p class="list-group-item-text">Twitter</p>
+                        </div>
+                        <div class="col-sm-2">
+                          <p class="list-group-item-text">Rachael Ray</p>
+                        </div>
+                        <div class="col-sm-1">
+                          <p class="list-group-item-text">1.5K</p>
+                        </div>
+                        <div class="col-sm-1">
+                          <p class="list-group-item-text">8.8K</p>
+                        </div>
+                        <div class="col-sm-1">
+                          <p class="list-group-item-text">Positive</p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="list-group-item" target="_blank" href="https://twitter.com/rachaelray/status/675442886117322753">
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        </div>
+                        <div class="col-sm-2">
+                          <p class="list-group-item-text">8:55pm on 10/31/15</p>
+                        </div>
+                        <div class="col-sm-1">
+                          <p class="list-group-item-text">Facebook</p>
+                        </div>
+                        <div class="col-sm-2">
+                          <p class="list-group-item-text">John Petrofsky</p>
+                        </div>
+                        <div class="col-sm-1">
+                          <p class="list-group-item-text">1.5K</p>
+                        </div>
+                        <div class="col-sm-1">
+                          <p class="list-group-item-text">8.8K</p>
+                        </div>
+                        <div class="col-sm-1">
+                          <p class="list-group-item-text">Negative</p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="list-group-item" target="_blank" href="https://twitter.com/rachaelray/status/675442886117322753">
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        </div>
+                        <div class="col-sm-2">
+                          <p class="list-group-item-text">8:55pm on 10/31/15</p>
+                        </div>
+                        <div class="col-sm-1">
+                          <p class="list-group-item-text">Twitter</p>
+                        </div>
+                        <div class="col-sm-2">
+                          <p class="list-group-item-text">John Petrofsky</p>
+                        </div>
+                        <div class="col-sm-1">
+                          <p class="list-group-item-text">1.5K</p>
+                        </div>
+                        <div class="col-sm-1">
+                          <p class="list-group-item-text">8.8K</p>
+                        </div>
+                        <div class="col-sm-1">
+                          <p class="list-group-item-text">Neutral</p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="list-group-item" target="_blank" href="https://twitter.com/rachaelray/status/675442886117322753">
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        </div>
+                        <div class="col-sm-2">
+                          <p class="list-group-item-text">8:55pm on 10/31/15</p>
+                        </div>
+                        <div class="col-sm-1">
+                          <p class="list-group-item-text">Twitter</p>
+                        </div>
+                        <div class="col-sm-2">
+                          <p class="list-group-item-text">Rachael Ray</p>
+                        </div>
+                        <div class="col-sm-1">
+                          <p class="list-group-item-text">1.5K</p>
+                        </div>
+                        <div class="col-sm-1">
+                          <p class="list-group-item-text">8.8K</p>
+                        </div>
+                        <div class="col-sm-1">
+                          <p class="list-group-item-text">Positive</p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="list-group-item" target="_blank" href="https://twitter.com/rachaelray/status/675442886117322753">
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        </div>
+                        <div class="col-sm-2">
+                          <p class="list-group-item-text">8:55pm on 10/31/15</p>
+                        </div>
+                        <div class="col-sm-1">
+                          <p class="list-group-item-text">Facebook</p>
+                        </div>
+                        <div class="col-sm-2">
+                          <p class="list-group-item-text">John Petrofsky</p>
+                        </div>
+                        <div class="col-sm-1">
+                          <p class="list-group-item-text">1.5K</p>
+                        </div>
+                        <div class="col-sm-1">
+                          <p class="list-group-item-text">8.8K</p>
+                        </div>
+                        <div class="col-sm-1">
+                          <p class="list-group-item-text">Negative</p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="list-group-item" target="_blank" href="https://twitter.com/rachaelray/status/675442886117322753">
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        </div>
+                        <div class="col-sm-2">
+                          <p class="list-group-item-text">8:55pm on 10/31/15</p>
+                        </div>
+                        <div class="col-sm-1">
+                          <p class="list-group-item-text">Twitter</p>
+                        </div>
+                        <div class="col-sm-2">
+                          <p class="list-group-item-text">John Petrofsky</p>
+                        </div>
+                        <div class="col-sm-1">
+                          <p class="list-group-item-text">1.5K</p>
+                        </div>
+                        <div class="col-sm-1">
+                          <p class="list-group-item-text">8.8K</p>
+                        </div>
+                        <div class="col-sm-1">
+                          <p class="list-group-item-text">Neutral</p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="list-group-item" target="_blank" href="https://twitter.com/rachaelray/status/675442886117322753">
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        </div>
+                        <div class="col-sm-2">
+                          <p class="list-group-item-text">8:55pm on 10/31/15</p>
+                        </div>
+                        <div class="col-sm-1">
+                          <p class="list-group-item-text">Twitter</p>
+                        </div>
+                        <div class="col-sm-2">
+                          <p class="list-group-item-text">Rachael Ray</p>
+                        </div>
+                        <div class="col-sm-1">
+                          <p class="list-group-item-text">1.5K</p>
+                        </div>
+                        <div class="col-sm-1">
+                          <p class="list-group-item-text">8.8K</p>
+                        </div>
+                        <div class="col-sm-1">
+                          <p class="list-group-item-text">Positive</p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="list-group-item" target="_blank" href="https://twitter.com/rachaelray/status/675442886117322753">
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        </div>
+                        <div class="col-sm-2">
+                          <p class="list-group-item-text">8:55pm on 10/31/15</p>
+                        </div>
+                        <div class="col-sm-1">
+                          <p class="list-group-item-text">Facebook</p>
+                        </div>
+                        <div class="col-sm-2">
+                          <p class="list-group-item-text">John Petrofsky</p>
+                        </div>
+                        <div class="col-sm-1">
+                          <p class="list-group-item-text">1.5K</p>
+                        </div>
+                        <div class="col-sm-1">
+                          <p class="list-group-item-text">8.8K</p>
+                        </div>
+                        <div class="col-sm-1">
+                          <p class="list-group-item-text">Negative</p>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="list-group-item" target="_blank" href="https://twitter.com/rachaelray/status/675442886117322753">
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        </div>
+                        <div class="col-sm-2">
+                          <p class="list-group-item-text">8:55pm on 10/31/15</p>
+                        </div>
+                        <div class="col-sm-1">
+                          <p class="list-group-item-text">Twitter</p>
+                        </div>
+                        <div class="col-sm-2">
+                          <p class="list-group-item-text">John Petrofsky</p>
+                        </div>
+                        <div class="col-sm-1">
+                          <p class="list-group-item-text">1.5K</p>
+                        </div>
+                        <div class="col-sm-1">
+                          <p class="list-group-item-text">8.8K</p>
+                        </div>
+                        <div class="col-sm-1">
+                          <p class="list-group-item-text">Neutral</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+  <script>
+    $(document).ready(function() {
+      $("body").tooltip({ selector: '[data-toggle=tooltip]' });
+    });
+  </script>
 </body>
 </html>

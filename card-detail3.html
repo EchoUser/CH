@@ -20,22 +20,13 @@
     <div class="row">
       <div class="col-sm-12">
         <div class="input-group">
-          <input type="text" class="form-control" placeholder="            ">
-          <span class="label label-primary search-label">FitFood
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </span>
-          <span class="label label-primary search-label2">Weeknight dinner
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </span>
+          <input type="text" class="offset form-control" placeholder="            ">
+          <span class="label label-primary search-label">FitFood<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></span>
           <span class="input-group-btn">
-            <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+          <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
           </span>
         </div><!-- /input-group -->
-      </div>
+      </div><!-- /.col-lg-6 -->
     </div>
     <div class="row">
       <div class="col-sm-1">
@@ -55,111 +46,336 @@
       </div>
     </div>
     <ol class="breadcrumb">
-      <li>All insights for "FitFood" and "Weeknight dinner"</li>
+      <li><a href="insights.html">All insights for "FitFood"</a></li>
+      <li>Topics</li>
     </ol>
-    <div class="row">
-      <div class="bootcards-cards">
-
-      <a href="card-detail.html">
-        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-          <div class="panel panel-default">
-            <div class="panel-body">
-            Compared to the general population, this audience is more likely to be <strong>female, ages 25-34,</strong> and within the <strong>United States</strong>
+    <div class="bootcards-list">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <h4 class="center">The topics most relevant to this conversation are <strong>weeknight dinner, all natural,</strong> and <strong>FitFood diet</strong></h4>
+          <p class="small">Topics are a classification of common themes and words mentioned in conversation.</p>
+          <h5>all topics (92)</h5>
+          <div class="row">
+            <div class="col-xs-3">
+              <a class="btn-sm btn-primary btn-block" href="#">
+                Add another column property
+              </a>
             </div>
-            <img src="img/chart.png" class="img-responsive"/>
+          </div>
+        </div>
+
+        <div class="list-group">
+          <div class="list-group-header">
             <div class="row">
-              <div class="col-sm-1 col-sm-offset-10">
-                <a href="card-detail.html">more</a>
+              <div class="col-sm-2">
+                <h5>topic</h5>
+              </div>
+              <div class="col-sm-4">
+                <h5 data-toggle="tooltip" title="How relevant this topic is among this audience relative to the general population, in the context of this conversation"><a href="card-detail.html">relevance score (volume x affinity)</a></h5>
+              </div>
+              <div class="col-sm-4">
+                <h5 data-toggle="tooltip" title="How many audience posts are related to this topic"><a href="card-detail3.html">volume <span class="caret caret-reversed"></span></a></h5>
+              </div>
+              <div class="col-sm-2">
+                <h5 data-toggle="tooltip" title="How popular this topic is among this audience relative to the general population"><a href="#">affinity</a></h5>
               </div>
             </div>
           </div>
-        </div>
-      </a>
-
-        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-          <div class="panel panel-default">
-            <div class="panel-body">
-              <a href="card-detail.html">The topics most relevant to this conversation are <strong>weeknight dinner, all natural,</strong> and <strong>FitFood diet</strong></a>
-            </div>
-            <div class="table-responsive">
-             <table class="table table-hover">
-               <thead>
-                 <tr class="active"><th>topic</th><th></th><th>relevance<br/>score</th></tr>
-               </thead>
-               <tbody>
-                 <a href="#"><tr><td data-toggle="modal" data-target=".topicModal">Weeknight dinner</td><td>2750</td><td>8.2</td></tr></a>
-                 <tr><td data-toggle="modal" data-target=".topicModal">All natural</td><td>3300</td><td>7.5</td></tr>
-                 <tr><td data-toggle="modal" data-target=".topicModal">FitFood diet</td><td>6050</td><td>7.5</td></tr>
-                 <tr><td data-toggle="modal" data-target=".topicModal">Breakfast for dinner</td><td>3300</td><td>7.3</td></tr>
-                 <tr><td data-toggle="modal" data-target=".topicModal">Feeling hungry</td><td>6050</td><td>7.2</td></tr>
-                 <tr><td data-toggle="modal" data-target=".topicModal">What to cook</td><td>3300</td><td>6.0</td></tr>
-                 <tr><td data-toggle="modal" data-target=".topicModal">Better than takeout</td><td>6050</td><td>3.2</td></tr>
-                 <tr><td data-toggle="modal" data-target=".topicModal">Wednesday night</td><td>3300</td><td>3.1</td></tr>
-                 <tr><td data-toggle="modal" data-target=".topicModal">Home cooked</td><td>6050</td><td>2.6</td></tr>
-                 <tr><td data-toggle="modal" data-target=".topicModal">Butternut squash</td><td>3300</td><td>1.4</td></tr>
-               </tbody>
-             </table>
-             <div class="row">
-               <div class="col-sm-1 col-sm-offset-10">
-                 <a href="card-detail.html">more</a>
-               </div>
-             </div>
-           </div>
-          </div>
-        </div>
-        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-          <div class="panel panel-default">
-            <div class="panel-body">
-              The hashtags most relevant to this audience are <strong>#WhatsForDinner, #BostonMarathon</strong> and <strong>#WisdomWednesday</strong>
-            </div>
-            <div class="table-responsive">
-             <table class="table table-hover">
-               <thead>
-                 <tr class="active"><th>hashtags</th><th></th><th>relevance<br/>score</th></tr>
-               </thead>
-               <tbody>
-                 <a href="#"><tr><td>#WhatsForDinner</td><td>2750</td><td>8.2</td></tr></a>
-                 <tr><td>#BostonMarathon</td><td>3300</td><td>7.5</td></tr>
-                 <tr><td>#WisdomWednesday</td><td>6050</td><td>7.5</td></tr>
-                 <tr><td>Television</td><td>3300</td><td>7.3</td></tr>
-                 <tr><td>Conservation</td><td>6050</td><td>7.2</td></tr>
-                 <tr><td>Hiking</td><td>3300</td><td>6.0</td></tr>
-                 <tr><td>Restaurants</td><td>6050</td><td>3.2</td></tr>
-                 <tr><td>Tina Fey</td><td>3300</td><td>3.1</td></tr>
-                 <tr><td>Recipes</td><td>6050</td><td>2.6</td></tr>
-                 <tr><td>Blogging</td><td>3300</td><td>1.4</td></tr>
-               </tbody>
-             </table>
-             <div class="row">
-               <div class="col-sm-1 col-sm-offset-10">
-                 <a href="card-detail.html">more</a>
-               </div>
-             </div>
-           </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="bootcards-cards">
-        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-          <div class="panel panel-default">
-            <div class="panel-body">
-            Conversation volume <strong>increased 2x above average</strong> on <strong>October 31</strong>
-            </div>
-            <img src="img/graph.png" class="img-responsive"/>
+          <div class="list-group-item">
             <div class="row">
-              <div class="col-sm-1 col-sm-offset-10">
-                <a href="card-detail.html">more</a>
+              <div class="col-sm-2">
+                <p class="list-group-item-text" data-toggle="modal" data-target=".topicModal"><strong>FitFood diet</strong></p>
+              </div>
+              <div class="col-sm-3">
+                <div class="progress">
+                  <div class="progress-bar" style="width: 75%;">
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-1">
+                7.5
+              </div>
+              <div class="col-sm-3">
+                <div class="progress">
+                  <div class="progress-bar" style="width: 51%;">
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-1">
+                51%
+              </div>
+              <div class="col-sm-1">
+                3.3x
               </div>
             </div>
           </div>
+
+          <div class="list-group-item">
+            <div class="row">
+              <div class="col-sm-2">
+                <p class="list-group-item-text" data-toggle="modal" data-target=".topicModal"><strong>All natural</strong></p>
+              </div>
+              <div class="col-sm-3">
+                <div class="progress">
+                  <div class="progress-bar" style="width: 75%;">
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-1">
+                7.5
+              </div>
+              <div class="col-sm-3">
+                <div class="progress">
+                  <div class="progress-bar" style="width: 39%;">
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-1">
+                39%
+              </div>
+              <div class="col-sm-1">
+                6.5x
+              </div>
+            </div>
+          </div>
+
+          <div class="list-group-item">
+            <div class="row">
+              <div class="col-sm-2">
+                <p class="list-group-item-text" data-toggle="modal" data-target=".topicModal"><strong>Weeknight dinner</strong></p>
+              </div>
+              <div class="col-sm-3">
+                <div class="progress">
+                  <div class="progress-bar" style="width: 92%;">
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-1">
+                9.2
+              </div>
+              <div class="col-sm-3">
+                <div class="progress">
+                  <div class="progress-bar" style="width: 32%;">
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-1">
+                38%
+              </div>
+              <div class="col-sm-1">
+                7x
+              </div>
+            </div>
+          </div>
+
+          <div class="list-group-item">
+            <div class="row">
+              <div class="col-sm-2">
+                <p class="list-group-item-text" data-toggle="modal" data-target=".topicModal">What to cook</p>
+              </div>
+              <div class="col-sm-3">
+                <div class="progress">
+                  <div class="progress-bar" style="width: 6.0%;">
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-1">
+                6.0
+              </div>
+              <div class="col-sm-3">
+                <div class="progress">
+                  <div class="progress-bar" style="width: 27%;">
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-1">
+                27%
+              </div>
+              <div class="col-sm-1">
+                3.4x
+              </div>
+            </div>
+          </div>
+
+          <div class="list-group-item">
+            <div class="row">
+              <div class="col-sm-2">
+                <p class="list-group-item-text" data-toggle="modal" data-target=".topicModal">Feeling hangry</p>
+              </div>
+              <div class="col-sm-3">
+                <div class="progress">
+                  <div class="progress-bar" style="width: 72%;">
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-1">
+                7.2
+              </div>
+              <div class="col-sm-3">
+                <div class="progress">
+                  <div class="progress-bar" style="width: 26%;">
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-1">
+                26%
+              </div>
+              <div class="col-sm-1">
+                2.1x
+              </div>
+            </div>
+          </div>
+
+          <div class="list-group-item">
+            <div class="row">
+              <div class="col-sm-2">
+                <p class="list-group-item-text" data-toggle="modal" data-target=".topicModal">Breakfast for dinner</p>
+              </div>
+              <div class="col-sm-3">
+                <div class="progress">
+                  <div class="progress-bar" style="width: 73%;">
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-1">
+                7.3
+              </div>
+              <div class="col-sm-3">
+                <div class="progress">
+                  <div class="progress-bar" style="width: 25%;">
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-1">
+                25%
+              </div>
+              <div class="col-sm-1">
+                7.5x
+              </div>
+            </div>
+          </div>
+
+          <div class="list-group-item">
+            <div class="row">
+              <div class="col-sm-2">
+                <p class="list-group-item-text" data-toggle="modal" data-target=".topicModal">Better than takeout</p>
+              </div>
+              <div class="col-sm-3">
+                <div class="progress">
+                  <div class="progress-bar" style="width: 35%;">
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-1">
+                3.5
+              </div>
+              <div class="col-sm-3">
+                <div class="progress">
+                  <div class="progress-bar" style="width: 21%;">
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-1">
+                21%
+              </div>
+              <div class="col-sm-1">
+                7x
+              </div>
+            </div>
+          </div>
+
+          <div class="list-group-item">
+            <div class="row">
+              <div class="col-sm-2">
+                <p class="list-group-item-text" data-toggle="modal" data-target=".topicModal">Wednesday night</p>
+              </div>
+              <div class="col-sm-3">
+                <div class="progress">
+                  <div class="progress-bar" style="width: 31%;">
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-1">
+                3.1
+              </div>
+              <div class="col-sm-3">
+                <div class="progress">
+                  <div class="progress-bar" style="width: 16%;">
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-1">
+                16%
+              </div>
+              <div class="col-sm-1">
+                2x
+              </div>
+            </div>
+          </div>
+
+          <div class="list-group-item">
+            <div class="row">
+              <div class="col-sm-2">
+                <p class="list-group-item-text" data-toggle="modal" data-target=".topicModal">Home cooked</p>
+              </div>
+              <div class="col-sm-3">
+                <div class="progress">
+                  <div class="progress-bar" style="width: 26%;">
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-1">
+                2.6
+              </div>
+              <div class="col-sm-3">
+                <div class="progress">
+                  <div class="progress-bar" style="width: 15%;">
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-1">
+                15%
+              </div>
+              <div class="col-sm-1">
+                1.9x
+              </div>
+            </div>
+          </div>
+
+          <div class="list-group-item">
+            <div class="row">
+              <div class="col-sm-2">
+                <p class="list-group-item-text" data-toggle="modal" data-target=".topicModal">Butternut squash</p>
+              </div>
+              <div class="col-sm-3">
+                <div class="progress">
+                  <div class="progress-bar" style="width: 14%;">
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-1">
+                1.4
+              </div>
+              <div class="col-sm-3">
+                <div class="progress">
+                  <div class="progress-bar" style="width: 13%;">
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-1">
+                13%
+              </div>
+              <div class="col-sm-1">
+                1.9x
+              </div>
+            </div>
+          </div>
+
         </div>
+
+
       </div>
     </div>
-
     <div id="topicModal" class="modal fade topicModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -444,7 +660,20 @@
         </div>
       </div>
     </div>
-
+    </div>
   </div>
+  <script>
+    $(".btn").click(function() {
+      location.href = "card-detail2.html";
+    });
+    $(document).keypress(function(e) {
+      if(e.which == 13) {
+          location.href = "card-detail2.html";
+      }
+    });
+    $(document).ready(function() {
+      $("body").tooltip({ selector: '[data-toggle=tooltip]' });
+    });
+  </script>
 </body>
 </html>
