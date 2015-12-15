@@ -1,3 +1,7 @@
+html {
+    overflow-y:scroll;
+}
+
 html, body{height:100%; margin:0;padding:0}
 
 body {
@@ -23,6 +27,10 @@ h5 {
   font-size: 12px;
 }
 
+.table-responsive {
+  overflow:hidden;
+}
+
 .list-group {
   font-size: 11px;
 }
@@ -46,7 +54,7 @@ h5 {
 }
 
 .transparent {
-  color: #fff;
+  color: rgba(1, 1, 1, 0);
   height: 1px;
 }
 
@@ -133,4 +141,9 @@ h5 {
 .bottom-right {
   position: relative;
   left: 320px;
+}
+
+.alert .close {
+  top: 0;
+  right: 0;
 }
